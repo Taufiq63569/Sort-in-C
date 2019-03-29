@@ -1,13 +1,18 @@
 #include <stdio.h>
-int main(){
+int main()
+{
     int i, A[100], n;
+    printf("Size of array: ");
     scanf("%d",&n);
-    for(i =0; i<n; i++){
+    printf("\nTake input: ");
+    for(i =0; i<n; i++)
+    {
         scanf("%d",&A[i]);
     }
-    printf("Before sort: \n");
+    printf("\nBefore sort: \n");
 
-    for(i =0; i<n; i++){
+    for(i =0; i<n; i++)
+    {
         printf("%d ",A[i]);
     }
     printf("\n\n");
@@ -15,7 +20,8 @@ int main(){
 
     printf("After sort: \n");
 
-    for(i =0; i<n; i++){
+    for(i =0; i<n; i++)
+    {
         printf("%d ",A[i]);
     }
     printf("\n\n");
@@ -23,11 +29,15 @@ int main(){
 }
 
 
-bubble(int a[], int n){
+void bubble(int a[], int n)
+{
     int i,j,k;
-    for(i=0; i<n; i++){
-        for(j=0; j<n-i-1;j++){
-            if (a[j]>a[j+1]){
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<n-i-1; j++)
+        {
+            if (a[j]>a[j+1])
+            {
                 k=a[j];
                 a[j]=a[j+1];
                 a[j+1]=k;
