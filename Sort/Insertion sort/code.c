@@ -2,12 +2,14 @@
 int main()
 {
     int i, A[100], n;
+    printf("Size of array: ");
     scanf("%d",&n);
+    printf("\nTake input: ");
     for(i =0; i<n; i++)
     {
         scanf("%d",&A[i]);
     }
-    printf("Before sort: \n");
+    printf("\nBefore sort: \n");
 
     for(i =0; i<n; i++)
     {
