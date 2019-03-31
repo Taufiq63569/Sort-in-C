@@ -29,7 +29,7 @@ void quick_sort(int a[], int low , int high){
     int p;
     p= partition(a, low, high);
 
-    quick_sort(a, p-1, low);
+    quick_sort(a, low, p-1);
     quick_sort(a, p+1, high);
 }
 
